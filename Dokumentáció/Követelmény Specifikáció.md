@@ -24,3 +24,5 @@ A mi célunk egy olyan zenelejátszó/streaming létrehozása, ami ingyenesen mi
 
 A projektünk célja egy olyan alkalmazás létrehozása, amelyel könnyen tudunk you tube zenei videók linkeit tárolni,és ezeken keresztül képesek vagyunk ezeket csak zenéként lejátszani. Evvel arra törekedve, hogy olyan alkalmazást kínáljunk, ami kikapcsolódást és szórakoztatást nyújt a 
 felhasználóknak.
+
+Mivel manapság már mindenki megengedheti magának, hogy okostelefonja legyen, ezért a programunkat úgy fejlesztjük, hogy az elérhető legyen a legtöbb mobilos platformon.
