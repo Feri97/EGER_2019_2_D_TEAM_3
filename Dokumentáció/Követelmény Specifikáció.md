@@ -18,3 +18,9 @@ A jelenleg elérhető, nagyobb zenei streamer szolgáltatások  (Spotify, Apple 
 Persze némelyik szolgáltatást lehet, ingyenesen használni, de ezért cserébe néhány funkció ami a fizetős változatban alap, nem elérhető, illetve két zeneszám között hangosreklámok játszódnak le.
 
 A mi célunk egy olyan zenelejátszó/streaming létrehozása, ami ingyenesen minden a youtube-on megtalálható zeneszám elérését biztositja, olyan funkciókkal, ami a többi hasonló szolgáltatásnál csak és kizárólag előfizetés ellenében érhető el.
+
+
+### Vágyálom rendszer
+
+A projektünk célja egy olyan alkalmazás létrehozása, amelyel könnyen tudunk you tube zenei videók linkeit tárolni,és ezeken keresztül képesek vagyunk ezeket csak zenéként lejátszani. Evvel arra törekedve, hogy olyan alkalmazást kínáljunk, ami kikapcsolódást és szórakoztatást nyújt a 
+felhasználóknak.
