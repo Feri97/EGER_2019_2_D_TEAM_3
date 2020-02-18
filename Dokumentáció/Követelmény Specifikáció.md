@@ -31,3 +31,9 @@ Az alkalmazás elindításakor a kezdőlap fogad minket ahol egy bevezetőt olva
 youtube linkjét, és egy rövismertetőt kell hozzáadni az adott zenéhez.
 
 A későbbiekben attól függően, hogy mennyire lesz sikeres a projektünk, a következő fejlesztéseket szeretnénk végrehajtani.
+
+
+### Jelenlegi üzleti folyamatok
+
+A jelenleg ismert zenehallgatásra alkalmas oldalak sokaknak megfelelőek, mégis számos kompromisszummal járnak, ugyanis a legtöbbjük  
+nem engedi a lezárt képernyővel történő zenehallgatást, illetve nem csak zenék feltöltésére szolgál, ennek köszönhetően a töltési idő is tovább tart. 
