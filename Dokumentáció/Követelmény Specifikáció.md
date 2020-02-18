@@ -26,3 +26,8 @@ A projektünk célja egy olyan alkalmazás létrehozása, amelyel könnyen tudun
 felhasználóknak.
 
 Mivel manapság már mindenki megengedheti magának, hogy okostelefonja legyen, ezért a programunkat úgy fejlesztjük, hogy az elérhető legyen a legtöbb mobilos platformon.
+
+Az alkalmazás elindításakor a kezdőlap fogad minket ahol egy bevezetőt olvashatunk el. Innen tovább tudunk lépni az információkra illetve a bejelentkezésre. A Bejelentkezést követően feltöltés és lejátszás oldalak is elérhetőek. Ezek az oldalak könnyen kezelhetőek és látványos felülettel rendelkeznek, hogy felkeltsék a felhasználó érdeklődését. A feltöltésnél előadó nevet, album nevet, megjelenési évet, a zene 
+youtube linkjét, és egy rövismertetőt kell hozzáadni az adott zenéhez.
+
+A későbbiekben attól függően, hogy mennyire lesz sikeres a projektünk, a következő fejlesztéseket szeretnénk végrehajtani.
