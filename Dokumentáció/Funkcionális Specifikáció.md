@@ -15,4 +15,10 @@ A 2010-es évekre a digitális zenelejátszók jobbára eltüntek, ugyanis ezek 
 
 A mai világban streaming szolgáltatások, legyen szó itt mozgóképes vagy zenei szolgáltatásokról, jelentősen formálják a jelenlegi médiafogysztási szokásokat.
 
-Streaming szolgáltatások, mi esetünkben a zenei streamingek, a felhasználók szempontjából, erőforrásilag és anyagilag egy gazdaságos megoldás, ugyanis erőforrás szempontjából nem foglalnak tárhelyet az adott zenék, mivel ezek egy távoli szerveren találhatóak, anyagilag pedig egy teljesértékü album, legyen az digitálisan vagy fizikálisan beszerzett, árának majdhogynem a feléből vagy akár ingyen, több ezer zeneszám érhető el. 
+Streaming szolgáltatások, mi esetünkben a zenei streamingek, a felhasználók szempontjából, hardveres szempontból és anyagilag egy gazdaságos megoldás, ugyanis erőforrás szempontjából nem foglalnak tárhelyet az adott zenék, mivel ezek egy távoli szerveren találhatóak, anyagilag pedig egy teljesértékü album, legyen az digitálisan vagy fizikálisan beszerzett, árának majdhogynem a feléből vagy akár ingyen, több ezer zeneszám érhető el. 
+
+A jelenleg elérhető, nagyobb zenei streamer szolgáltatások  (Spotify, Apple Music, Deezer, Tidal) többnyire fizetős szolgáltatások, amiket különböző konstrukciókban lehet előfizetni. Lehet havi vagy éves szolgáltatás fizetés szempontjából, illetve családi vagy sima előfizetés a használandó eszközök száma szempontjából. 
+
+Ha nem akarnánk zenei streamereken keresztül online zenéket hallgatni, akkor alternatívaként ott lehet számunkra a youtube. Bár a youtube elsődlegesen videók megosztására szolgál, több olyan videó fellelhető az oldalon, ahol vizuálisan egy kép van statikusan beállítva és alatt szól a zene. Sokan vannak olyanok, akik így hallgatnak az interneten zenét, de ennek a megoldásnak van egy pár hátulütője, főleg telefonon keresztül. Az egyik az, mikor az ember telefonon keresztül hallgatva zenét, a készüléknek folyamatosan feloldott állapotban kell lennie, ugyanis ha azt lezárjuk akkor a lejátszás abba marad. Vagy közben nem tudunk semmi mást csinálni a készüléken, ugyanis egyből megáll a lejátszás ha átváltunk egy másik app-ra.
+
+Célunk egy olyan lejátszó alkalmazás létrehozása ami youtube-ról képes zenéket lejátszani úgy, hogy le lehessen zárni a telefont illetve alkalmazást váltani anélkül, hogy a lejátszás abba maradna.
