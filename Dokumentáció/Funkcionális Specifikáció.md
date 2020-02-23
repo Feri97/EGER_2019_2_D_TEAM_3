@@ -9,6 +9,10 @@ A hordozható zenelejátszás mára már hétköznapi dolognak számit, mégis n
 
 A 2010-es évekre a digitális zenelejátszók jobbára eltüntek, ugyanis ezek szerepét átvették szép fokozatosan az okostelefonok amiket sok egyéb más mellett digitális lejátszóként is használható, ezzel kiváltva, az eddigieket. Ebben az évtizedben, a mobilinternet elérhetőségének és sebességének javulásával,elérhetővé vált az hogy nem kell feltétlenül több száz zenét az eszközön offline tárolni, hanem azokat internetről streamelve, közel kiváló minőségben lehessen hallgatni.
 
+### A rendszer célja, és nem céljai
+A rendszer alapvető célja egy olyan mobilos alkalmazás, amely segítségével, a felhasználó, képes az adott videó alól, kinyerni a hanganyagot, és ezt képes lejátszani, a telefon kijelzőjének ébren tartása nélkül. 
+Az alkalmazás, nem gyűjt semmi féle adatot a felhasználóról, egy pár jogosultságra van szüksége, hogy a lezárt képernyő alatt is tovább legyen képes működni az alkalmazás. Az alkalmazás nem tartalmaz reklámokat, valamint nem rendelkezik semmilyen nemű költséggel, teljesen ingyenes. 
+Nem célja az alkalmazásnak, hogy a userek által használt különböző készülékekről, információt gyűjtsön, továbbá az alkalmazás tökéletes futása érdekében nélkülözhetetlen jogosultságok mellett, más egyéb nem szükséges jogosultságokat kérni.
 
 
 ### Jelenlegi helyzet
@@ -22,3 +26,40 @@ A jelenleg elérhető, nagyobb zenei streamer szolgáltatások  (Spotify, Apple 
 Ha nem akarnánk zenei streamereken keresztül online zenéket hallgatni, akkor alternatívaként ott lehet számunkra a youtube. Bár a youtube elsődlegesen videók megosztására szolgál, több olyan videó fellelhető az oldalon, ahol vizuálisan egy kép van statikusan beállítva és alatt szól a zene. Sokan vannak olyanok, akik így hallgatnak az interneten zenét, de ennek a megoldásnak van egy pár hátulütője, főleg telefonon keresztül. Az egyik az, mikor az ember telefonon keresztül hallgatva zenét, a készüléknek folyamatosan feloldott állapotban kell lennie, ugyanis ha azt lezárjuk akkor a lejátszás abba marad. Vagy közben nem tudunk semmi mást csinálni a készüléken, ugyanis egyből megáll a lejátszás ha átváltunk egy másik app-ra.
 
 Célunk egy olyan lejátszó alkalmazás létrehozása ami youtube-ról képes zenéket lejátszani úgy, hogy le lehessen zárni a telefont illetve alkalmazást váltani anélkül, hogy a lejátszás abba maradna.
+
+### Vágyálomrendszer leírása
+
+A projektünk célja egy olyan alkalmazás létrehozása, amelyel könnyen tudunk you tube zenei videók linkeit tárolni,és ezeken keresztül képesek vagyunk ezeket csak zenéként lejátszani. Evvel arra törekedve, hogy olyan alkalmazást kínáljunk, ami kikapcsolódást és szórakoztatást nyújt a felhasználóknak.
+
+Mivel manapság már mindenki megengedheti magának, hogy okostelefonja legyen, ezért a programunkat úgy fejlesztjük, hogy az elérhető legyen a legtöbb mobilos platformon.
+
+Az alkalmazás elindításakor a kezdőlap fogad minket ahol egy bevezetőt olvashatunk el. Innen tovább tudunk lépni az információkra illetve a bejelentkezésre. A Bejelentkezést követően feltöltés és lejátszás oldalak is elérhetőek. Ezek az oldalak könnyen kezelhetőek és látványos felülettel rendelkeznek, hogy felkeltsék a felhasználó érdeklődését. A feltöltésnél előadó nevet, album nevet, megjelenési évet, a zene youtube linkjét, és egy rövismertetőt kell hozzáadni az adott zenéhez.
+A későbbiekben attól függően, hogy mennyire lesz sikeres a projektünk, a következő fejlesztéseket szeretnénk végrehajtani.
+
+### Jelenlegi üzleti folyamatok
+
+![JelenlegiDiagramm](/Pictures/JelenlegiDiagramm.png)
+
+A jelenleg ismert zenehallgatásra alkalmas oldalak sokaknak megfelelőek, mégis számos kompromisszummal járnak, ugyanis a legtöbbjük nem engedi a lezárt képernyővel történő zenehallgatást, illetve nem csak zenék feltöltésére szolgál, ennek köszönhetően a töltési idő is tovább tart.
+
+A másik kompromisszum az, hogy reklámokkal bombázzák a felhasználókat így elkerülve azt, hogy fizetni kelljen a szolgáltatásokért. Ez egy régóta bevett szokás, mégis ugyanazt a reklámot végig nézni újra és újra, egy idő után riasztó lehet. 
+
+Ezért is javasolt egy olyan weboldalt készíteni, amely nem zavarja a felhasználót és rontja el a szórakozását a kéretlen reklámokkal.
+Különböző méretű, viszonylag kevés helyet foglaló reklám felületekkel biztosítható a bevétel és az, hogy a legkisebb mértékben zavarjuk a felhasználót szórakozásában.
+
+### Igényelt üzleti folyamatok
+
+![Igényelt](/Pictures/IgenyeltDiagramm.png)
+
+A megrendelő véleménye az, hogy egy leegyszerűsített, a youtube videok csak és kizárólag hangként lejátszását szolgáló weboldal nagyon sikeres lehet. Követelménye, hogy a reklámok ne zavarják a felhasználókat és a lehető legvisszafogottabbak legyenek.
+
+Konvertálás és lejátszás: Szüksége van egy saját lejátszóra, de hogy legyen mit lejátszani, előtte az adott linken szereplő youtube videót konvertálni kell ahoz, hogy csak hangként le lehessen játszani.
+
+Linktárolás: A felhasználó képes legyen elmenteni a kedvenc zenéinek a linkjeit tárolni. Ehez felhasználókezelés szükséges.
+Modell: Kezdőoldal -> Bejelentkezés -> Sikeres bejelentkezés -> Lejátszás -> Feltöltés -> Ismertető -> Elérhetőségek
+
+### Követelménylista
+
+![KövetelményLista](/Pictures/kovetelmenylista.png)
+
+
