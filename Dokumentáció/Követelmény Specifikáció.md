@@ -62,10 +62,7 @@ Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
 
 ### Követelménylista
 
-|  Követelmény  |  Követelmény  | Követelményekről | Kifejtés           |
-|   sorszáma    |  megnevezése  |    bővebben      |                    |
-|---------------|---------------|------------------|--------------------|
-|     K001      | YouTube-on    |   1,2,5 fejezet  |YouTube össses      |
-|               | elérhető zenék|                  |videója alól   	    |
-|			    |				|				   |kilehessen nyerni a | 
-|			    |				|				   |hangot              |
+|  Követelmény sorszáma | Követelmény megnevezése  | Követelményekről bővebben | 
+|-----------------------|--------------------------|---------------------------|
+|         K001          |YouTube-on elérhető zenék |         1,2,5 fejezet     |
+|         K002          |Lezárt képernyővel való működés|     1,5 fejezet      |                       
