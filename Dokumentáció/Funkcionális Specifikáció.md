@@ -71,3 +71,7 @@ Modell: Kezdőoldal -> Bejelentkezés -> Sikeres bejelentkezés -> Lejátszás -
 A felhasználó zenét szeretne hallgatni, de nem rendelkezik semmi féle streaming szolgáltató fiókkal. 
 Ellátogat a YouTube.com-ra, ahol kiválasztja a hallgatni kívánt zenét, majd egyéb tevékenység miatt lezárja a mobileszközének a kijelzőjét. Ebben a pillanatban a zene lejátszása szünetel. 
 Vissza megy a YouTube-ra kimásolja az adott zene URL-jét, bemásolja az alkalmazásunkba, elindítja a zenét, az alkalmazásból, és hallgathatja a kívánt zenét, akár lezárt képernyővel is.
+
+### Funkció – követelmény megfeleltetés
+
+![KövetelményMegfeleltetés](/Pictures/kovetelmenylista.png)
