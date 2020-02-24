@@ -66,3 +66,8 @@ Kezdőoldal 	-> Bejelentkezés -> Sikeres bejelentkezés 	-> Lejátszás
 |-----------------------|--------------------------|---------------------------|
 |         K001          |YouTube-on elérhető zenék |         1,2,5 fejezet     |
 |         K002          |Lezárt képernyővel való működés|     1,5 fejezet      |                       
+|         K003          |Csak szükséges jogusultságok|     1,5 fejezet         |                       
+|         K004          |Reklám mentesség|     1,5 fejezet      |                       
+|         K005          |Ingyenes alkalmazás|     1,2,5 fejezet      |                       
+|         K006          |Ne legyen adatgyűjtés|     1 fejezet      |                       
+
