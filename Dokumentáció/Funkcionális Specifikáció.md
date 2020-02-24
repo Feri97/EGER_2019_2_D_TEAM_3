@@ -62,6 +62,10 @@ Modell: Kezdőoldal -> Bejelentkezés -> Sikeres bejelentkezés -> Lejátszás -
 
 ![KövetelményLista](/Pictures/kovetelmenylista.png)
 
+### Használati esetek
+
+![Használatiesetek](/Pictures/Use&#32;cases.png)
+
 ### Képernyőterv
 
 ![Képernyőterv](/Pictures/screen.png)
