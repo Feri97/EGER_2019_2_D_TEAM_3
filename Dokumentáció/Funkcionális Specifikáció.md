@@ -64,7 +64,7 @@ Modell: Kezdőoldal -> Bejelentkezés -> Sikeres bejelentkezés -> Lejátszás -
 
 ### Használati esetek
 
-A leggyakoribb használati eset, amikor a user egy zenét szeretne hallgatni, ami a YouTube videómegosztón elérhető, ilyenkor a user ahelyett, hogy felkeres egy streaming szolgáltatást a sok közül, áttanulmányozza a havidíj rendszerét, kiválasztja a számára alkalmas csomagot, beregisztrál, és ezen a fizetős platformon hallgatná a zenét, ehelyett egyszerűen csak megkeresi YouTube-on az általa hallgatni kívánt zenét, kimásolja az URL címét, majd beilleszti az általunk készített alkalmazásba, és máris hallgathatja zenét. Mindezek mellett, amennyiben lezárt képernyőt használná (tömegközlekedésen utazik, sportol, stb..) lehetősége legyen rá, azaz a zene lejátszása ne álljon meg amikor a képernyő lezárásra kerül.
+A leggyakoribb használati eset, amikor a user egy zenét szeretne hallgatni, ami a YouTube videómegosztón elérhető, ilyenkor a user ahelyett, hogy felkeres egy streaming szolgáltatást a sok közül, áttanulmányozza a havidíj rendszerét, kiválasztja a számára alkalmas csomagot, beregisztrál, és ezen a fizetős platformon hallgatná a zenét, ehelyett egyszerűen csak megkeresi YouTube-on az általa hallgatni kívánt zenét, kimásolja az URL címét, majd beilleszti az általunk készített alkalmazásba, és máris hallgathatja zenét. Mindezek mellett, amennyiben lezárt képernyőt használná (tömegközlekedésen utazik, sportol, stb..), lehetősége legyen rá, azaz a zene lejátszása ne álljon meg amikor a képernyő lezárásra kerül.
 
 ![Használatiesetek](/Pictures/Usecases.png)
 
