@@ -62,6 +62,10 @@ Modell: Kezdőoldal -> Bejelentkezés -> Sikeres bejelentkezés -> Lejátszás -
 
 ![KövetelményLista](/Pictures/kovetelmenylista.png)
 
+### Használati esetek
+
+![Használatiesetek](/Pictures/Usecases.png)
+
 ### Képernyőterv
 
 ![Képernyőterv](/Pictures/screen.png)
@@ -75,3 +79,12 @@ Vissza megy a YouTube-ra kimásolja az adott zene URL-jét, bemásolja az alkalm
 ### Funkció – követelmény megfeleltetés
 
 ![KövetelményMegfeleltetés](/Pictures/kovetelmenylista.png)
+
+
+### Fogalomszótár
+
+Streaming: Egyidejű, vagy azonnali adatfolyam, általában tömörített multimédiás információ interneten keresztül való kézbesítése, 
+amely a bináris számítógépes fájlformátumokhoz (például AVI) viszonyítva kevésbé célozza meg a videotartalom teljes hűségű visszaállítását, 
+elsősorban az azonnaliságra összpontosít.
+
+Admin: Az átlagos felhasználónál több mindenhez fér hozzá.
