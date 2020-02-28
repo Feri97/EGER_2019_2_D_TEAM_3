@@ -8,6 +8,21 @@ szüksége lesz egy YouTube linkre ami segitségével letudja játszani a videó
 lejátszására a telefon képernyőjének ébrentartása nélkül. A rendszert bárki elfogja tudni érni és az alkalmazás összes funkcióját
 kivétel nélkül minden felhasználó teljesen ingyen használhatja.
 
+### Projektterv
+Projekten dolgozók listája:
+
+A projekt menedzseléséért felelős csapat:
+
+|  Dátum | Tevékenység  |  
+|-----------------------|--------------------------|
+|    2020.02.03-02.29   | Dokumentációk elkészítése és véglegesítése | 
+|         2020.02.29-         |Fejlesztés megkezdése|
+|         2020.02.29-         |Unit tesztek| 
+|                |Alpha teszt|
+|                |Béta teszt|
+|         2020.05.12         |Projekt átadása|
+
+
 ### Követelménylista
 
 |  Követelmény sorszáma | Követelmény megnevezése  | Követelményekről bővebben | 
