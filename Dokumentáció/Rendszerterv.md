@@ -10,7 +10,8 @@ kivétel nélkül minden felhasználó teljesen ingyen használhatja.
 
 ### Projektterv
 Projekten dolgozók listája:
-
+ 
+![ProjektenDolgozók](/Pictures/AlkalmazasonDolgozok.png)
 
 A projekt menedzseléséért felelős csapat:
 
