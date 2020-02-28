@@ -74,7 +74,7 @@ A leggyakoribb használati eset, amikor a user egy zenét szeretne hallgatni, am
 
 ### Forgatókönyvek
 
-A felhasználó zenét szeretne hallgatni, de nem rendelkezik semmi féle streaming szolgáltató fiókkal. 
+A felhasználó zenét szeretne hallgatni, de nem rendelkezik semmilyen féle streaming szolgáltató fiókkal. 
 Ellátogat a YouTube.com-ra, ahol kiválasztja a hallgatni kívánt zenét, majd egyéb tevékenység miatt lezárja a mobileszközének a kijelzőjét. Ebben a pillanatban a zene lejátszása szünetel. 
 Vissza megy a YouTube-ra kimásolja az adott zene URL-jét, bemásolja az alkalmazásunkba, elindítja a zenét, az alkalmazásból, és hallgathatja a kívánt zenét, akár lezárt képernyővel is.
 
