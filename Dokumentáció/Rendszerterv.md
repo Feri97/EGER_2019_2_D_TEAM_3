@@ -37,3 +37,36 @@ A projekt menedzseléséért felelős csapat:
 |         K004          |Reklám mentesség|     Követelmény specifikáció <br/> 1,5. fejezet      |                       
 |         K005          |Ingyenes alkalmazás|     Követelmény specifikáció <br/> 1,2,5. fejezet      |                       
 |         K006          |Ne legyen adatgyűjtés|    Követelmény specifikáció <br/> 1. fejezet      |                       
+
+
+### Adatbázis terv
+
+![Adatbázis terv](/Pictures/dbdiagram.png)
+
+Music tábla
+
+| Mező név | Tipus/hossz | Kötelező | Érték/validáció | Kulcs | Megj. |
+|----------|-------------|----------|-----------------|-------|-------|
+| Id | INT | Igen | Auto-increment | PK| |
+| name | VARCHAR(200) | Igen | | |
+| ytlink | VARCHAR(200) | Igen| | |
+
+Music megszorítások
+
+| Azonosító | Tábla 1 | Mező 1 | Tábla 2 | Mező 2 | Megj. |
+|-----------|---------|--------|---------|--------|-------|
+| Music_PK | Music | Id | | | |
+
+Playlist tábla
+
+| Mező név | Tipus/hossz | Kötelező | Érték/validáció | Kulcs | Megj. |
+|----------|-------------|----------|-----------------|-------|-------|
+| Id | INT | Igen | Auto-increment | PK | |
+| musicid | INT | Igen | | FK | | 
+
+Playlist megszorítások
+
+| Azonosító | Tábla 1 | Mező 1 | Tábla 2 | Mező 2 | Megj. |
+|-----------|---------|--------|---------|--------|-------|
+| Playlist_PK | Playlist | Id | | | |
+| Musicid_FK | Playlist | Id | Music | Id | |
