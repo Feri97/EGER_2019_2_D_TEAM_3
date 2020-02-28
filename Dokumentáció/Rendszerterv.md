@@ -41,4 +41,4 @@ A projekt menedzseléséért felelős csapat:
 
 ### Adatbázis terv
 
-[Adatbázis terv](/Pictures/dbdiagram2.png)
+![Adatbázis terv](/Pictures/dbdiagram.png)
