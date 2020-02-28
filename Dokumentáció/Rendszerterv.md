@@ -12,9 +12,9 @@ kivétel nélkül minden felhasználó teljesen ingyen használhatja.
 
 |  Követelmény sorszáma | Követelmény megnevezése  | Követelményekről bővebben | 
 |-----------------------|--------------------------|---------------------------|
-|         K001          |YouTube-on elérhető zenék |         Követelmény specifikáció <br/> 1,2,5 fejezet     |
-|         K002          |Lezárt képernyővel való működés|     Követelmény specifikáció <br/> 1,5 fejezet    |                       
-|         K003          |Csak szükséges <br/> jogusultságok|     Követelmény specifikáció <br/> 1,5 fejezet         |                       
-|         K004          |Reklám mentesség|     Követelmény specifikáció <br/> 1,5 fejezet      |                       
-|         K005          |Ingyenes alkalmazás|     Követelmény specifikáció <br/> 1,2,5 fejezet      |                       
-|         K006          |Ne legyen adatgyűjtés|    Követelmény specifikáció <br/> 1 fejezet      |                       
+|         K001          |YouTube-on elérhető zenék |         Követelmény specifikáció <br/> 1,2,5. fejezet     |
+|         K002          |Lezárt képernyővel való működés|     Követelmény specifikáció <br/> 1,5. fejezet    |                       
+|         K003          |Csak szükséges <br/> jogusultságok|     Követelmény specifikáció <br/> 1,5. fejezet         |                       
+|         K004          |Reklám mentesség|     Követelmény specifikáció <br/> 1,5. fejezet      |                       
+|         K005          |Ingyenes alkalmazás|     Követelmény specifikáció <br/> 1,2,5. fejezet      |                       
+|         K006          |Ne legyen adatgyűjtés|    Követelmény specifikáció <br/> 1. fejezet      |                       
