@@ -37,3 +37,8 @@ A projekt menedzseléséért felelős csapat:
 |         K004          |Reklám mentesség|     Követelmény specifikáció <br/> 1,5. fejezet      |                       
 |         K005          |Ingyenes alkalmazás|     Követelmény specifikáció <br/> 1,2,5. fejezet      |                       
 |         K006          |Ne legyen adatgyűjtés|    Követelmény specifikáció <br/> 1. fejezet      |                       
+
+
+### Adatbázis terv
+
+[Adatbázis terv](/Pictures/dbdiagram2.png)
