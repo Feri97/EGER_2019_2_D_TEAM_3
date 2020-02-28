@@ -11,7 +11,10 @@ kivétel nélkül minden felhasználó teljesen ingyen használhatja.
 ### Projektterv
 Projekten dolgozók listája:
 
+
 A projekt menedzseléséért felelős csapat:
+
+![ProjektenDolgozók](/Pictures/Managers.png)
 
 |  Dátum | Tevékenység  |  
 |-----------------------|--------------------------|
