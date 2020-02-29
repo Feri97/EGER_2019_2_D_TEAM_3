@@ -63,6 +63,12 @@ Linktárolás: A felhasználó képes legyen elmenteni a kedvenc zenéinek a lin
 |         K006          |Ne legyen adatgyűjtés|    Követelmény specifikáció <br/> 1. fejezet      |                       
 
 
+### Absztrakciós modell
+
+A program működése során a felhasználó egy féle szerepkörben figyelhető meg. A felhasználó képes zenét játszani, amit a link
+alapján megadott videóból konvertál át a videó. A kapott zenéket képesek vagyunk lejátszási listába gyűjteni, illetve ezeket
+lejátszani lezárt képernyőnél is.
+
 ### Adatbázis terv
 
 ![Adatbázis terv](/Pictures/dbdiagram.png)
