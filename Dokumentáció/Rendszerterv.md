@@ -98,4 +98,4 @@ Playlist megszorítások
 
 ### Implementációs terv
 
-Az alkalmazás felületét és a mögötte rejlő logikát  AndroidStudio-val szeretnénk megvalósítani, azon belül is Java nyelven. Igyekszünk a felhasználó számára csak a működéshez lényeges mezőket, gombokat megjeleníteni, nem célunk, hogy kezelhetetlennek tűnjön az alkalmazás. A linkek tárolására szükségünk lesz egy adatbázisra, az SQLite nevű adatbázist fogjuk használni a szükséges dolgok tárolására, nem egy nagy hatalmas globális adatbázis lesz, hanem minden készüléknek külön-külön adatbázisa lesz.
+Az alkalmazás felületét és a mögötte rejlő logikát  AndroidStudio-val szeretnénk megvalósítani, azon belül is Java nyelven. Igyekszünk a felhasználó számára csak a működéshez feltétlenül szükséges mezőket, gombokat megjeleníteni, nem célunk, hogy kezelhetetlennek tűnjön az alkalmazás. A linkek tárolására szükségünk lesz egy adatbázisra, az SQLite nevű adatbázist fogjuk használni a szükséges dolgok tárolására, nem egy nagy hatalmas globális adatbázis lesz, hanem minden készüléknek külön-külön adatbázisa lesz.
