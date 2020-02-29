@@ -101,6 +101,12 @@ Playlist megszorítások
 Az alkalmazás felületét és a mögötte rejlő logikát  AndroidStudio-val szeretnénk megvalósítani, azon belül is Java nyelven. Igyekszünk a felhasználó számára csak a működéshez feltétlenül szükséges mezőket, gombokat megjeleníteni, nem célunk, hogy kezelhetetlennek tűnjön az alkalmazás. A linkek tárolására szükségünk lesz egy adatbázisra, az SQLite nevű adatbázist fogjuk használni a szükséges dolgok tárolására, nem egy nagy hatalmas globális adatbázis lesz, hanem minden készüléknek külön-külön adatbázisa lesz.
 
 
+###  Telepítési terv
+
+Az alkamazás telepítéséhez kell android operációs rendszert futtató okostelefon, illetve egy fejlesztési időszakban egy PC. Utobbira azért van szükség, mert a fejlesztés alatt áló alkalmazást, fejlesztőkörnyzettel lehet föltelepíteni a készülékre. A fejlésztés után, mint más 
+nem play áruház-béli alkalmazást lehet telepíteni az eszközön, feltéve ha engedélyezve van az, hogy a nem play áruházból való alkalmazást is lehesssen telepíteni az eszközre.
+
+
 ### Karbantartási terv
 
 A szoftveren a későbbiekben nem kell nagyobb karbantartásokat elvégezni. Az esetleges karbantartások
