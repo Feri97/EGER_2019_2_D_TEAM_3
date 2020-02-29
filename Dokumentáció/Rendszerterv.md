@@ -27,6 +27,18 @@ A projekt menedzseléséért felelős csapat:
 |         2020.05.12         |Projekt átadása|
 
 
+### Jelenlegi üzleti folyamatok
+
+![JelenlegiDiagramm](/Pictures/JelenlegiDiagramm.png)
+
+A jelenleg ismert zenehallgatásra alkalmas oldalak sokaknak megfelelőek, mégis számos kompromisszummal járnak, ugyanis a legtöbbjük nem engedi a lezárt képernyővel történő zenehallgatást, illetve nem csak zenék feltöltésére szolgál, ennek köszönhetően a töltési idő is tovább tart.
+
+A másik kompromisszum az, hogy reklámokkal bombázzák a felhasználókat így elkerülve azt, hogy fizetni kelljen a szolgáltatásokért. Ez egy régóta bevett szokás, mégis ugyanazt a reklámot végig nézni újra és újra, egy idő után riasztó lehet. 
+
+Ezért is javasolt egy olyan weboldalt készíteni, amely nem zavarja a felhasználót és rontja el a szórakozását a kéretlen reklámokkal.
+Különböző méretű, viszonylag kevés helyet foglaló reklám felületekkel biztosítható a bevétel és az, hogy a legkisebb mértékben zavarjuk a felhasználót szórakozásában.
+
+
 ### Követelménylista
 
 |  Követelmény sorszáma | Követelmény megnevezése  | Követelményekről bővebben | 
