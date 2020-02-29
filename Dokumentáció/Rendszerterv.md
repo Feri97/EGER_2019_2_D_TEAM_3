@@ -39,6 +39,19 @@ Ezért is javasolt egy olyan weboldalt készíteni, amely nem zavarja a felhaszn
 Különböző méretű, viszonylag kevés helyet foglaló reklám felületekkel biztosítható a bevétel és az, hogy a legkisebb mértékben zavarjuk a felhasználót szórakozásában.
 
 
+### Igényelt üzleti folyamatok
+
+![Igényelt](/Pictures/IgenyeltDiagramm.png)
+
+A megrendelő véleménye az, hogy egy leegyszerűsített, a youtube videok csak és kizárólag hangként lejátszását szolgáló weboldal nagyon sikeres lehet. Követelménye, hogy a reklámok ne zavarják a felhasználókat és a lehető legvisszafogottabbak legyenek.
+
+Konvertálás és lejátszás: Szüksége van egy saját lejátszóra, de hogy legyen mit lejátszani, előtte az adott linken szereplő youtube videót konvertálni kell ahoz, hogy csak hangként le lehessen játszani.
+
+Linktárolás: A felhasználó képes legyen elmenteni a kedvenc zenéinek a linkjeit tárolni. Ehez felhasználókezelés szükséges.
+Modell: Kezdőoldal -> Bejelentkezés -> Sikeres bejelentkezés -> Lejátszás -> Feltöltés -> Ismertető -> Elérhetőségek
+
+
+
 ### Követelménylista
 
 |  Követelmény sorszáma | Követelmény megnevezése  | Követelményekről bővebben | 
