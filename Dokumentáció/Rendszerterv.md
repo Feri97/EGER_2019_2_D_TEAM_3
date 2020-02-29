@@ -27,6 +27,30 @@ A projekt menedzseléséért felelős csapat:
 |         2020.05.12         |Projekt átadása|
 
 
+### Jelenlegi üzleti folyamatok
+
+![JelenlegiDiagramm](/Pictures/JelenlegiDiagramm.png)
+
+A jelenleg ismert zenehallgatásra alkalmas oldalak sokaknak megfelelőek, mégis számos kompromisszummal járnak, ugyanis a legtöbbjük nem engedi a lezárt képernyővel történő zenehallgatást, illetve nem csak zenék feltöltésére szolgál, ennek köszönhetően a töltési idő is tovább tart.
+
+A másik kompromisszum az, hogy reklámokkal bombázzák a felhasználókat így elkerülve azt, hogy fizetni kelljen a szolgáltatásokért. Ez egy régóta bevett szokás, mégis ugyanazt a reklámot végig nézni újra és újra, egy idő után riasztó lehet. 
+
+Ezért is javasolt egy olyan weboldalt készíteni, amely nem zavarja a felhasználót és rontja el a szórakozását a kéretlen reklámokkal.
+Különböző méretű, viszonylag kevés helyet foglaló reklám felületekkel biztosítható a bevétel és az, hogy a legkisebb mértékben zavarjuk a felhasználót szórakozásában.
+
+
+### Igényelt üzleti folyamatok
+
+![Igényelt](/Pictures/IgenyeltDiagramm.png)
+
+A megrendelő véleménye az, hogy egy leegyszerűsített, a youtube videok csak és kizárólag hangként lejátszását szolgáló weboldal nagyon sikeres lehet. Követelménye, hogy a reklámok ne zavarják a felhasználókat és a lehető legvisszafogottabbak legyenek.
+
+Konvertálás és lejátszás: Szüksége van egy saját lejátszóra, de hogy legyen mit lejátszani, előtte az adott linken szereplő youtube videót konvertálni kell ahoz, hogy csak hangként le lehessen játszani.
+
+Linktárolás: A felhasználó képes legyen elmenteni a kedvenc zenéinek a linkjeit tárolni. Ehez felhasználókezelés szükséges.
+
+
+
 ### Követelménylista
 
 |  Követelmény sorszáma | Követelmény megnevezése  | Követelményekről bővebben | 
@@ -70,3 +94,8 @@ Playlist megszorítások
 |-----------|---------|--------|---------|--------|-------|
 | Playlist_PK | Playlist | Id | | | |
 | Musicid_FK | Playlist | Id | Music | Id | |
+
+
+### Implementációs terv
+
+Az alkalmazás felületét és a mögötte rejlő logikát  AndroidStudio-val szeretnénk megvalósítani, azon belül is Java nyelven. Igyekszünk a felhasználó számára csak a működéshez lényeges mezőket, gombokat megjeleníteni, nem célunk, hogy kezelhetetlennek tűnjön az alkalmazás. A linkek tárolására szükségünk lesz egy adatbázisra, az SQLite nevű adatbázist fogjuk használni a szükséges dolgok tárolására, nem egy nagy hatalmas globális adatbázis lesz, hanem minden készüléknek külön-külön adatbázisa lesz.
