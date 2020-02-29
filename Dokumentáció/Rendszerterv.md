@@ -48,7 +48,6 @@ A megrendelő véleménye az, hogy egy leegyszerűsített, a youtube videok csak
 Konvertálás és lejátszás: Szüksége van egy saját lejátszóra, de hogy legyen mit lejátszani, előtte az adott linken szereplő youtube videót konvertálni kell ahoz, hogy csak hangként le lehessen játszani.
 
 Linktárolás: A felhasználó képes legyen elmenteni a kedvenc zenéinek a linkjeit tárolni. Ehez felhasználókezelés szükséges.
-Modell: Kezdőoldal -> Bejelentkezés -> Sikeres bejelentkezés -> Lejátszás -> Feltöltés -> Ismertető -> Elérhetőségek
 
 
 
