@@ -45,7 +45,7 @@ Különböző méretű, viszonylag kevés helyet foglaló reklám felületekkel 
 
 A megrendelő véleménye az, hogy egy leegyszerűsített, a youtube videok csak és kizárólag hangként lejátszását szolgáló weboldal nagyon sikeres lehet. Követelménye, hogy a reklámok ne zavarják a felhasználókat és a lehető legvisszafogottabbak legyenek.
 
-Konvertálás és lejátszás: Szüksége van egy saját lejátszóra, de hogy legyen mit lejátszani, előtte az adott linken szereplő youtube videót konvertálni kell ahoz, hogy csak hangként le lehessen játszani.
+Konvertálás és lejátszás: Szüksége van egy saját lejátszóra, de hogy legyen mit lejátszani, előtte az adott linken szereplő youtube videót konvertálni kell ahoz, hogy csak hangként lehessen lejátszani.
 
 Linktárolás: A felhasználó képes legyen elmenteni a kedvenc zenéinek a linkjeit tárolni. Ehez felhasználókezelés szükséges.
 
@@ -98,4 +98,33 @@ Playlist megszorítások
 
 ### Implementációs terv
 
-Az alkalmazás felületét és a mögötte rejlő logikát  AndroidStudio-val szeretnénk megvalósítani, azon belül is Java nyelven. Igyekszünk a felhasználó számára csak a működéshez lényeges mezőket, gombokat megjeleníteni, nem célunk, hogy kezelhetetlennek tűnjön az alkalmazás. A linkek tárolására szükségünk lesz egy adatbázisra, az SQLite nevű adatbázist fogjuk használni a szükséges dolgok tárolására, nem egy nagy hatalmas globális adatbázis lesz, hanem minden készüléknek külön-külön adatbázisa lesz.
+Az alkalmazás felületét és a mögötte rejlő logikát  AndroidStudio-val szeretnénk megvalósítani, azon belül is Java nyelven. Igyekszünk a felhasználó számára csak a működéshez feltétlenül szükséges mezőket, gombokat megjeleníteni, nem célunk, hogy kezelhetetlennek tűnjön az alkalmazás. A linkek tárolására szükségünk lesz egy adatbázisra, az SQLite nevű adatbázist fogjuk használni a szükséges dolgok tárolására, nem egy nagy hatalmas globális adatbázis lesz, hanem minden készüléknek külön-külön adatbázisa lesz.
+
+### Teszt terv
+
+- Alpha teszt:
+	- Az alpha tesztet a fejlesztők végzik, amelyben a rendszer összeomlását próbálják elérni remélhetőleg sikertelenül. Amennyiben 
+	felderítenek egy hibát jelentést írnak róla, majd javítják.
+	- Az alpha teszt során külön tesztelni kell a fontosabb funkciókat, mintpedig: A link tartalmának beolvasása, az adott videó kovertálása, illetve annak lejátszása, linkek elmentése lejátszási listába
+
+- Beta teszt:
+    - Az alpha tesztet követően a felhasználók elvégzik a béta tesztet, melynek során a programban maradt súlyosabb hibák felderítésre kerülnek, majd a fejlesztők javítják őket.
+	- A teszt során a stabilitás, letisztultság növelése a cél.
+    - (A tesztekről naplót kell készíteni, amely alapján esetleges hibáknál kitölthető a hibajelentő.)
+
+###  Telepítési terv
+
+Az alkamazás telepítéséhez kell android operációs rendszert futtató okostelefon, illetve egy fejlesztési időszakban egy PC. Utobbira azért van szükség, mert a fejlesztés alatt áló alkalmazást, fejlesztőkörnyzettel lehet föltelepíteni a készülékre. A fejlésztés után, mint más 
+nem play áruház-béli alkalmazást lehet telepíteni az eszközön, feltéve ha engedélyezve van az, hogy a nem play áruházból való alkalmazást is lehesssen telepíteni az eszközre.
+
+
+### Karbantartási terv
+
+A szoftveren a későbbiekben nem kell nagyobb karbantartásokat elvégezni. Az esetleges karbantartások
+a következőből állhatnak:
+
+    - Tesztelés frissebb verziójú android használatával. Hiba észlelése esetén azok javítása.
+
+    - Esetleges YouTube változtatásokra való reagálás.
+
+    - Igény esetén új funkciók hozzáadása.
