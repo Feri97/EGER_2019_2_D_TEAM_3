@@ -165,6 +165,15 @@ Kliens:
 	
         Konfiguráció: Nem specifikus.
 
+Szerver:
+
+    Eszköz: Kliens
+
+	Specifikáció: Klienssel ekvivalens
+
+	Operációs rendszer: API15 Android 4.0.3+ IceCreamSandwich
+
+	Komponensek: MySQLite DB provider.
 
 ### Karbantartási terv
 
