@@ -69,6 +69,10 @@ A program működése során a felhasználó egy féle szerepkörben figyelhető
 alapján megadott videóból konvertál át a videó. A kapott zenéket képesek vagyunk lejátszási listába gyűjteni, illetve ezeket
 lejátszani lezárt képernyőnél is.
 
+### Architekturális terv
+
+![Architekturális terv](/Pictures/Arch_terv.png)
+
 ### Adatbázis terv
 
 ![Adatbázis terv](/Pictures/dbdiagram.png)
