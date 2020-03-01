@@ -162,6 +162,8 @@ Menü hierarchiák:
 
 ### Fizikai környezet.
 
+![Architekturális terv](/Pictures/Arch_terv.png)
+
 Kliens:
 
     Eszköz1
