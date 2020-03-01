@@ -123,6 +123,24 @@ Az alkalmazás felületét és a mögötte rejlő logikát  AndroidStudio-val sz
 Az alkamazás telepítéséhez kell android operációs rendszert futtató okostelefon, illetve egy fejlesztési időszakban egy PC. Utobbira azért van szükség, mert a fejlesztés alatt áló alkalmazást, fejlesztőkörnyzettel lehet föltelepíteni a készülékre. A fejlésztés után, mint más 
 nem play áruház-béli alkalmazást lehet telepíteni az eszközön, feltéve ha engedélyezve van az, hogy a nem play áruházból való alkalmazást is lehesssen telepíteni az eszközre.
 
+### Funkcionális terv
+
+Rendszerszereplők:
+	
+    Felhasználó
+	
+
+Rendszer használati esetek és lefutásaik:
+
+	Felhasználó
+		-Zenék lejátszása
+		-Lejátszási listák megtekintése
+		-Lejátszási listához adás
+            -Legutóbb lejátszott zene lejátszása 
+            -Zeneszám konvertálása
+		-Zeneszám letöltése
+		
+
 ### Fizikai környezet.
 
 Kliens:
