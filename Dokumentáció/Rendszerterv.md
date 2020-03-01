@@ -140,6 +140,25 @@ Rendszer használati esetek és lefutásaik:
             -Zeneszám konvertálása
 		-Zeneszám letöltése
 		
+	
+Menü hierarchiák:
+		
+	Főmenü:
+		-Zenék
+		-Lejátszási listák
+		-Zene Hozzáadás
+		-Lejátszó
+
+    Zene Hozzáadás:
+            -Youtube link beillesztése
+		-Lejátszó
+
+	Lejátszási listák:
+		-Zenék
+		-Zene Hozzáadás
+		-Zenék eltávolítása
+		-Lejátszó
+	
 
 ### Fizikai környezet.
 
