@@ -63,6 +63,16 @@ Linktárolás: A felhasználó képes legyen elmenteni a kedvenc zenéinek a lin
 |         K006          |Ne legyen adatgyűjtés|    Követelmény specifikáció <br/> 1. fejezet      |                       
 
 
+### Absztrakciós modell
+
+A program működése során a felhasználó egy féle szerepkörben figyelhető meg. A felhasználó képes zenét játszani, amit a link
+alapján megadott videóból konvertál át a videó. A kapott zenéket képesek vagyunk lejátszási listába gyűjteni, illetve ezeket
+lejátszani lezárt képernyőnél is.
+
+### Architekturális terv
+
+![Architekturális terv](/Pictures/Arch_terv.png)
+
 ### Adatbázis terv
 
 ![Adatbázis terv](/Pictures/dbdiagram.png)
@@ -117,6 +127,78 @@ Az alkalmazás felületét és a mögötte rejlő logikát  AndroidStudio-val sz
 Az alkamazás telepítéséhez kell android operációs rendszert futtató okostelefon, illetve egy fejlesztési időszakban egy PC. Utobbira azért van szükség, mert a fejlesztés alatt áló alkalmazást, fejlesztőkörnyzettel lehet föltelepíteni a készülékre. A fejlésztés után, mint más 
 nem play áruház-béli alkalmazást lehet telepíteni az eszközön, feltéve ha engedélyezve van az, hogy a nem play áruházból való alkalmazást is lehesssen telepíteni az eszközre.
 
+### Funkcionális terv
+
+Rendszerszereplők:
+	
+    Felhasználó
+	
+
+Rendszer használati esetek és lefutásaik:
+
+	Felhasználó
+		-Zenék lejátszása
+		-Lejátszási listák megtekintése
+		-Lejátszási listához adás
+            -Legutóbb lejátszott zene lejátszása 
+            -Zeneszám konvertálása
+		-Zeneszám letöltése
+		
+	
+Menü hierarchiák:
+		
+	Főmenü:
+		-Zenék
+		-Lejátszási listák
+		-Zene Hozzáadás
+		-Lejátszó
+
+    Zene Hozzáadás:
+            -Youtube link beillesztése
+		-Lejátszó
+
+	Lejátszási listák:
+		-Zenék
+		-Zene Hozzáadás
+		-Zenék eltávolítása
+		-Lejátszó
+	
+
+### Fizikai környezet.
+
+![Architekturális terv](/Pictures/Arch_terv.png)
+
+Kliens:
+
+    Eszköz1
+	    
+        Eszköz: Okostelefon
+
+	    Operációs rendszer: API15 Android 4.0.3+ IceCreamSandwich
+	
+        Szükséges applikációk: Google Play Áruház
+	
+        Konfiguráció: Nem specifikus.
+    
+    Eszköz2
+
+        Eszköz: Tablet
+
+	    Operációs rendszer: API15 Android 4.0.3+ IceCreamSandwich
+	
+        Szükséges applikációk: Google Play Áruház
+	
+        Konfiguráció: Nem specifikus.
+
+Szerver:
+
+    Eszköz: Kliens
+
+	Specifikáció: Klienssel ekvivalens
+
+	Operációs rendszer: API15 Android 4.0.3+ IceCreamSandwich
+
+	Komponensek: MySQLite DB provider.
 
 ### Karbantartási terv
 
