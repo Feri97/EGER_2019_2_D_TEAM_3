@@ -197,4 +197,69 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+	
+	@Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater=getMenuInflater();
+        inflater.inflate(R.menu.search_menu,menu);
+
+        MenuItem searchItem=menu.findItem(R.id.action_search);
+
+        SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
+        searchView.setImeOptions(EditorInfo.IME_ACTION_DONE);
+        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+            @Override
+            public boolean onQueryTextSubmit(String query) {
+                return false;
+            }
+
+            @Override
+            public boolean onQueryTextChange(String newText) {
+               SongsFragment.search(newText);
+                return false;
+            }
+        });
+        return true;
+    }
+
+    public void sendOnChannel(String name,String artist,int position) {
+
+        Intent activityIntent = new Intent(this, MainActivity.class);
+        PendingIntent contentIntent = PendingIntent.getActivity(this,
+                0, activityIntent, 0);
+
+        int plaorpa;
+        if(PlayerActivity.playin){
+            plaorpa=R.drawable.pause_24dp;
+        }else{
+            plaorpa=R.drawable.play_arrow_24dp;
+        }
+        metadataRetriever = new MediaMetadataRetriever();
+        metadataRetriever.setDataSource(songs.get(position).getPath());
+        arts= metadataRetriever.getEmbeddedPicture();
+        Bitmap artwork;
+        try {
+            artwork=BitmapFactory.decodeByteArray(arts,0,arts.length);
+        }catch (Exception e){
+            artwork = BitmapFactory.decodeResource(getResources(), R.drawable.track_2);
+        }
+         notification = new NotificationCompat.Builder(this, channel_1_ID)
+                .setSmallIcon(R.drawable.music_note_24dp)
+                .setContentTitle(name)
+                .setContentText("Song")
+                .setLargeIcon(artwork)
+                .addAction(R.drawable.previous_24dp, "Previous", playbackAction(3))
+                .addAction(plaorpa, "Pause", playbackAction(1))
+                .addAction(R.drawable.next_24dp, "Next", playbackAction(2))
+                .setContentIntent(contentIntent)
+                .setStyle(new android.support.v4.media.app.NotificationCompat.MediaStyle()
+                        .setShowActionsInCompactView(0, 1, 2)
+                        .setMediaSession(mediaSession.getSessionToken()))
+                .setSubText(artist)
+                .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+                .build();
+
+
+        notificationManager.notify(1, notification);
+    }
 }
