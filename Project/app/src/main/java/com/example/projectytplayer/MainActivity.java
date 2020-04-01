@@ -112,6 +112,7 @@ public class MainActivity extends AppCompatActivity {
             requestStoragePermission();
         }else {
          start();
+		}
     }
 	
 	public void intializeMini(){
