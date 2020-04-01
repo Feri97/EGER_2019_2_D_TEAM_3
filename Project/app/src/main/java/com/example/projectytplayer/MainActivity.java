@@ -175,4 +175,26 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
+	private void start(){
+        dataReading=new DataReading(this);
+        songs=new ArrayList<>();
+        songs.add(new Song());
+        ArrayList<Song> songs = dataReading.getAllAudioFromDevice();
+        Collections.sort(songs);
+        SongAdapter.songs=songs;
+        albums=dataReading.getAlbums();
+        textView.setText(songs.get(0).getName());
+        shift();
+
+
+    }
+    public void shift(){
+        Iterator it = albums.entrySet().iterator();
+        while (it.hasNext()) {
+            Map.Entry pair = (Map.Entry)it.next();
+            al.add((ArrayList<Song>) pair.getValue());
+            it.remove(); // avoids a ConcurrentModificationException
+        }
+
+    }
 }
