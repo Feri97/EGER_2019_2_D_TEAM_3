@@ -92,4 +92,78 @@ public class SongAdapter extends RecyclerView.Adapter<SongAdapter.ViewHolder> im
             }
         }
     }
+	@Override
+    public int getItemCount() {
+        return songs.size();
+    }
+
+    public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
+    public ImageView mImageView;
+    public TextView textview1;
+    public TextView textView2;
+    OnClickListen onClickListen;
+        public ViewHolder(@NonNull View itemView,OnClickListen onClickListen) {
+            super(itemView);
+            mImageView=itemView.findViewById(R.id.imageView);
+            textview1=itemView.findViewById(R.id.textViewSongTitle);
+            textview1.setTypeface(myfont);
+            textView2=itemView.findViewById(R.id.textViewArtistName);
+            this.onClickListen=onClickListen;
+            itemView.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View v) {
+        onClickListen.onClick(getAdapterPosition());
+        }
+    }
+
+
+
+    public Song getSong(int position){
+        return allSongs.get(position);
+    }
+
+        public SongAdapter(Activity context, ArrayList<Song> song,OnClickListen onClickListen) {
+        this.context = context;
+        this.songs = song;
+        allSongs=new ArrayList<>(song);
+        inflater=(LayoutInflater)context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        this.monclicklisten=onClickListen;
+
+    }
+@Override
+    public Filter getFilter(){
+    return filter;
+}
+private Filter  filter=new Filter() {
+    @Override
+    protected FilterResults performFiltering(CharSequence constraint) {
+        List<Song>filteredList=new ArrayList<>();
+        if(constraint==null||constraint.length()==0){
+            filteredList.addAll(allSongs);
+        }else{
+            String filterpattern=constraint.toString().toLowerCase().trim();
+
+            for (Song oneSong:allSongs){
+                if(oneSong.getName().toLowerCase().startsWith(filterpattern)||oneSong.getArtist().toLowerCase().startsWith(filterpattern)){
+                    filteredList.add(oneSong);
+                }
+            }
+
+        }
+        FilterResults filterResults=new FilterResults();
+        filterResults.values=filteredList;
+        return filterResults;
+    }
+
+    @Override
+    protected void publishResults(CharSequence constraint, FilterResults results) {
+    songs.clear();
+    songs.add(new Song("shufflee"));
+    songs.addAll((List)results.values);
+    notifyDataSetChanged();
+    }
+};
+
 }
