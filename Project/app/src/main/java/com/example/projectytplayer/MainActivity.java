@@ -262,4 +262,25 @@ public class MainActivity extends AppCompatActivity {
 
         notificationManager.notify(1, notification);
     }
+	
+	private PendingIntent playbackAction(int actionNumber) {
+        Intent playbackAction = new Intent(this, NotiService.class);
+        switch (actionNumber) {
+            case 1:
+                // Pause
+                playbackAction.setAction("com.mypackage.ACTION_PAUSE_MUSIC");
+                return PendingIntent.getService(this, actionNumber, playbackAction, 0);
+            case 2:
+                // Next track
+                playbackAction.setAction("com.mypackage.ACTION_NEXT_MUSIC");
+                return PendingIntent.getService(this, actionNumber, playbackAction, 0);
+            case 3:
+                // Previous track
+                playbackAction.setAction("com.mypackage.ACTION_PREV_MUSIC");
+                return PendingIntent.getService(this, actionNumber, playbackAction, 0);
+            default:
+                break;
+        }
+        return null;
+    }
 }
