@@ -16,6 +16,33 @@
         android:id="@+id/imageView"
         android:adjustViewBounds="true"
         app:layout_constraintStart_toStartOf="parent"/>
-    
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewSongTitle"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        android:padding="7dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#E7DBDB"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewArtistName"
+        android:alpha=".7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/imageView"
+        android:padding="2dp"
+        android:singleLine="true"
+        android:ellipsize="marquee"
+        app:layout_constraintTop_toBottomOf="@id/textViewSongTitle"
+        android:textColor="#E7DBDB"
+
+        />
 
 </android.support.constraint.ConstraintLayout>
