@@ -1,10 +1,17 @@
 package com.example.projectytplayer.activities;
 
+import android.annotation.SuppressLint;
+import android.content.ContentUris;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.media.MediaPlayer;
+import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
@@ -13,7 +20,10 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.palette.graphics.Palette;
 
+import com.example.mediaplayer.models.Song;
 import com.example.projectytplayer.notification.NotificationCenter;
+import com.example.projectytplayer.adapters.*;
+
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -85,7 +95,7 @@ public class PlayerActivity extends AppCompatActivity {
             }
             instance = this;
             if (val == 1) {
-                Asongs = SongAlbumAdapter.albumSong;
+                Asongs = com.example.mediaplayer.adapters.SongAlbumAdapter.albumSong;
             } else if (val == 2) {
                 Asongs = com.example.mediaplayer.adapters.SongAdapter.songs;
                 Collections.shuffle(Asongs);
@@ -104,6 +114,45 @@ public class PlayerActivity extends AppCompatActivity {
 
     public static PlayerActivity getInstance() {
         return instance;
+    }
+
+    public void setData(int position){
+
+        String name= Asongs.get(position).getName();
+        String artist= Asongs.get(position).getArtist();
+        songTitle.setText(name);
+        artistname.setText(artist);
+        MainActivity.getInstance().textView.setText(name);
+        try {
+
+            Glide
+                    .with(getApplicationContext())
+                    .load(ContentUris.withAppendedId(Uri.parse("content://media/external/audio/albumart"),Asongs.get(position).getAlbumID()).toString())
+                    .thumbnail(0.2f)
+                    .centerCrop()
+                    .placeholder(R.drawable.track)
+                    .skipMemoryCache(true)
+                    .diskCacheStrategy(DiskCacheStrategy.NONE)
+                    .listener(new RequestListener<Drawable>() {
+                        @Override
+                        public boolean onLoadFailed(@Nullable GlideException e, Object model, Target<Drawable> target, boolean isFirstResource) {
+                            return false;
+                        }
+
+                        @Override
+                        public boolean onResourceReady(Drawable resource, Object model, Target<Drawable> target, DataSource dataSource, boolean isFirstResource) {
+                            setBackground();
+                            return false;
+                        }
+                    })
+                    .into(imageView);
+        }
+        catch (Exception e){
+
+            Glide.with(this).load(R.drawable.track).into(imageView);
+        }
+
+
     }
 
     public static void initiateSeekBar(){
@@ -127,6 +176,107 @@ public class PlayerActivity extends AppCompatActivity {
             }
         });
     }
+
+    public  void Buttons(){
+        pause.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                play();
+            }
+        });
+        prev.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                if (position == 0) {
+                    position = Asongs.size() - 1;
+                } else {
+                    position--;
+                }
+                initPlayer(position);
+
+            }
+        });
+
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                position=(position+1)% Asongs.size();
+                initPlayer(position);
+            }
+        });
+    }
+
+    public void initPlayer(final int position) {
+
+        playin=true;
+        if (mMediaPlayer != null && mMediaPlayer.isPlaying()) {
+            mMediaPlayer.reset();
+        }
+        String name= Asongs.get(position).getName();
+        String artist= Asongs.get(position).getArtist();
+        setData(position);
+        MainActivity.getInstance().sendOnChannel(name,artist,position);
+
+
+        mMediaPlayer = MediaPlayer.create(getApplicationContext(), Uri.parse(Asongs.get(position).getPath())); // create and load mediaplayer with song resources
+        mMediaPlayer.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                String totalTime = createTimeLabel(mMediaPlayer.getDuration());
+                totTime.setText(totalTime);
+                mSeekBar.setMax(mMediaPlayer.getDuration()/1000 );
+                mMediaPlayer.start();
+                pause.setBackgroundResource(R.drawable.pause_24dp);
+
+            }
+        });
+
+        mMediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                int curSongPoition = position;
+                curSongPoition = (curSongPoition + 1) % (Asongs.size());
+                initPlayer(curSongPoition);
+
+            }
+        });
+        initiateSeekBar();
+
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                while (mMediaPlayer != null) {
+                    try {
+                        if (mMediaPlayer.isPlaying()) {
+                            Message msg = new Message();
+                            msg.what = mMediaPlayer.getCurrentPosition();
+                            msg.arg1=mMediaPlayer.getDuration();
+                            handler.sendMessage(msg);
+                            Thread.sleep(1000);
+                        }
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                }
+            }
+        }).start();
+    }
+
+    @SuppressLint("HandlerLeak")
+    private Handler handler = new Handler() {
+        @Override
+        public void handleMessage(Message msg) {
+            int current_position = msg.what;
+            mSeekBar.setMax(mMediaPlayer.getDuration()/1000);
+            mSeekBar.setProgress(current_position/1000);
+            System.out.println(mSeekBar.getProgress());
+            String cTime = createTimeLabel(current_position);
+            curTime.setText(cTime);
+            totTime.setText(createTimeLabel(msg.arg1));
+        }
+    };
 
     public void play() {
 
@@ -153,6 +303,19 @@ public class PlayerActivity extends AppCompatActivity {
 
     }
 
+    public String createTimeLabel(int duration) {
+        String timeLabel = "";
+        int min = duration / 1000 / 60;
+        int sec = duration / 1000 % 60;
+
+        timeLabel += min + ":";
+        if (sec < 10) timeLabel += "0";
+        timeLabel += sec;
+
+        return timeLabel;
+
+
+    }
 
     public void setBackground(){
         Bitmap bitmap = ((BitmapDrawable) imageView.getDrawable()).getBitmap();
