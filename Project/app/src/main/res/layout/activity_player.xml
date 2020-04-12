@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:weightSum="10"
+    tools:context=".activities.PlayerActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/linear_layout"
+        android:layout_weight="7"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:id="@+id/imageplayer"
+            android:layout_width="320dp"
+            android:layout_height="320dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Song Name"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:id="@+id/song_name"
+            android:layout_weight="4"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Artist Name"
+            android:textAlignment="center"
+            android:textSize="17sp"
+            android:singleLine="true"
+            android:textColor="#ffff"
+            android:id="@+id/artist_name"
+            android:layout_marginTop="10dp"
+            android:layout_weight="6"
+            />
+        </LinearLayout>
+
+    </LinearLayout>
+    
+
+</LinearLayout>
