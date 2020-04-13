@@ -1,4 +1,4 @@
-package com.example.projectytplayer.activities;
+package com.example.mediaplayer.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -52,7 +52,7 @@ import com.example.mediaplayer.models.Song;
 import com.example.mediaplayer.adapters.SongAdapter;
 import com.example.mediaplayer.fragments.SongsFragment;
 import com.example.mediaplayer.adapters.ViewPagerAdapter;
-import com.example.projectytplayer.R;
+import com.example.mediaplayer.R;
 
 import static com.example.mediaplayer.notification.NofiticationCenter.channel_1_ID;
 import static com.example.mediaplayer.adapters.SongAdapter.songs;

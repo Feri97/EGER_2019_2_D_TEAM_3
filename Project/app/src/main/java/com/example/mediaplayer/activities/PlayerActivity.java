@@ -1,4 +1,4 @@
-package com.example.projectytplayer.activities;
+package com.example.mediaplayer.activities;
 
 import android.annotation.SuppressLint;
 import android.content.ContentUris;
@@ -11,6 +11,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.support.annotation.Nullable;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -20,10 +21,15 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.palette.graphics.Palette;
 
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.DataSource;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.load.engine.GlideException;
+import com.bumptech.glide.request.RequestListener;
+import com.bumptech.glide.request.target.Target;
+import com.example.mediaplayer.R;
 import com.example.mediaplayer.models.Song;
-import com.example.projectytplayer.notification.NotificationCenter;
-import com.example.projectytplayer.adapters.*;
-
+import com.example.mediaplayer.notification.NotificationCenter;
 
 import java.util.ArrayList;
 import java.util.Collections;
