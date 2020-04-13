@@ -1,4 +1,4 @@
-package com.example.projectytplayer.models;
+package com.example.mediaplayer.models;
 
 import android.content.Context;
 import android.database.Cursor;
