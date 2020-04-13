@@ -1,9 +1,7 @@
 package com.example.mediaplayer.activities;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-
 import android.Manifest;
+import android.app.AlertDialog;
 import android.app.Notification;
 import android.app.PendingIntent;
 import android.content.DialogInterface;
@@ -12,18 +10,9 @@ import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.media.MediaMetadataRetriever;
-import android.support.annotation.NonNull;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.app.NotificationCompat;
-import android.support.v4.app.NotificationManagerCompat;
-import android.support.v4.content.ContextCompat;
-import android.support.v4.media.session.MediaSessionCompat;
-import android.support.v4.view.MenuItemCompat;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.app.NotificationCompat;
+import android.support.v4.media.session.MediaSessionCompat;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
@@ -33,7 +22,29 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.support.v7.widget.SearchView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.SearchView;
+import androidx.core.app.ActivityCompat;
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+import androidx.core.content.ContextCompat;
+import androidx.core.view.MenuItemCompat;
+import androidx.viewpager.widget.ViewPager;
+
+import com.example.mediaplayer.R;
+import com.example.mediaplayer.adapters.SongAdapter;
+import com.example.mediaplayer.adapters.ViewPagerAdapter;
+import com.example.mediaplayer.fragments.AlbumsFragment;
+import com.example.mediaplayer.fragments.PlaylistFragment;
+import com.example.mediaplayer.fragments.SongsFragment;
+import com.example.mediaplayer.models.DataReading;
+import com.example.mediaplayer.models.Song;
+import com.example.mediaplayer.notification.NotiService;
+import com.google.android.material.tabs.TabLayout;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
@@ -41,21 +52,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import android.support.design.widget.TabLayout;
-
-import com.example.mediaplayer.fragments.AlbumsFragment;
-import com.example.mediaplayer.fragments.PlaylistFragment;
-import com.example.mediaplayer.models.DataReading;
-import com.example.mediaplayer.notification.NotiService;
-import com.example.mediaplayer.R;
-import com.example.mediaplayer.models.Song;
-import com.example.mediaplayer.adapters.SongAdapter;
-import com.example.mediaplayer.fragments.SongsFragment;
-import com.example.mediaplayer.adapters.ViewPagerAdapter;
-import com.example.mediaplayer.R;
-
-import static com.example.mediaplayer.notification.NofiticationCenter.channel_1_ID;
 import static com.example.mediaplayer.adapters.SongAdapter.songs;
+import static com.example.mediaplayer.notification.NotificationCenter.channel_1_ID;
 
 public class MainActivity extends AppCompatActivity {
 	private int Storage_Permission_code=1;

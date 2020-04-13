@@ -16,12 +16,15 @@ buildscript {
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        jcenter()
-        
-    }
+        allprojects {
+            repositories {
+                google()
+                jcenter()
+                maven{
+                    url "https://maven.google.com"
+                }
+
+            }
 }
 
 task clean(type: Delete) {
