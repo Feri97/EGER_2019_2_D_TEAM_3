@@ -12,9 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.example.mediaplayer.R;
-import com.example.mediaplayer.activities.AlbumActivity;
 import com.example.mediaplayer.activities.MainActivity;
-import com.example.mediaplayer.adapters.AlbumAdapter;
+import com.example.mediaplayer.adapters.PlaylistAdapter;
 
 import interfaces.OnClickListen;
 
@@ -24,7 +23,7 @@ public class PlaylistFragment extends Fragment implements OnClickListen {
 
     ///////////////HERE
     protected RecyclerView.LayoutManager mmanager;
-    protected static AlbumAdapter albumAdapter;
+    protected static PlaylistAdapter playlistAdapter;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -37,19 +36,19 @@ public class PlaylistFragment extends Fragment implements OnClickListen {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        v=inflater.inflate(R.layout.albums_fragment,container,false);
-        recyclerView = v.findViewById(R.id.albums_recycleview);
+        v=inflater.inflate(R.layout.playlist_fragment,container,false);
+        recyclerView = v.findViewById(R.id.playlist_recycleview);
         recyclerView.setHasFixedSize(true);
         mmanager=new GridLayoutManager(getContext(),2);
-        albumAdapter = new AlbumAdapter(this);
+        playlistAdapter = new PlaylistAdapter(this);
         recyclerView.setLayoutManager(mmanager);
-        recyclerView.setAdapter(albumAdapter);
+        recyclerView.setAdapter(playlistAdapter);
         return v;
 
     }
     @Override
     public void onClick(int position) {
-        Intent intent=new Intent(MainActivity.getInstance(), AlbumActivity.class).putExtra("index",position);
+        Intent intent=new Intent(MainActivity.getInstance(), PlaylistAdapter.class).putExtra("index",position);
         startActivity(intent);
     }
 

@@ -49,14 +49,11 @@ public class PlaylistAdapter extends RecyclerView.Adapter<PlaylistAdapter.ViewHo
     }
 
     public static class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
-        private TextView album,artist;
-        private ImageView imageView;
+        private TextView playlist;
         private OnClickListen onClickListen;
         public ViewHolder(@NonNull View itemView,OnClickListen onClickListen) {
             super(itemView);
-            album=itemView.findViewById(R.id.album_name);
-            artist=itemView.findViewById(R.id.album_artist);
-            imageView=itemView.findViewById(R.id.album_image);
+            playlist=itemView.findViewById(R.id.playlist_name);
             this.onClickListen=onClickListen;
             itemView.setOnClickListener(this);
         }
