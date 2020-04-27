@@ -41,6 +41,7 @@ import android.support.design.widget.TabLayout;
 
 import com.example.mediaplayer.fragments.AlbumsFragment;
 import com.example.mediaplayer.fragments.PlaylistFragment;
+import com.example.mediaplayer.fragments.YtFragment;
 import com.example.mediaplayer.models.DataReading;
 import com.example.mediaplayer.notification.NotiService;
 import com.example.mediaplayer.R;
@@ -91,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
         viewPagerAdapter.addFragment(new SongsFragment(),"Songs");
         viewPagerAdapter.addFragment(new PlaylistFragment(),"Playlist");
         viewPagerAdapter.addFragment(new AlbumsFragment(),"Albums");
-        viewPagerAdapter.addFragment(new SongsFragment(),"Youtube");
+        viewPagerAdapter.addFragment(new YtFragment(),"Youtube");
 
         viewPager.setAdapter(viewPagerAdapter);
         tableLayout.setupWithViewPager(viewPager);
