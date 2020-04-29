@@ -90,6 +90,18 @@ public class SongTest extends Song {
         song.setAlbum("Album");
         assertEquals("Album", song.getAlbum());
     }
+	  @Test
+    public void testGetArtist() {
+
+        String Artist = song.getArtist();
+        assertEquals(Artist, song.getArtist());
+    }
+
+    @Test
+    public void testSetArtist() {
+        song.setArtist("Album");
+        assertEquals("Album", song.getArtist());
+    }
 
 
 
