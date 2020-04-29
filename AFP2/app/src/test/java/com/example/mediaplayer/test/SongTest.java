@@ -63,6 +63,33 @@ public class SongTest extends Song {
         song.setAlbumArt("AlbumArt");
         assertEquals("AlbumArt", song.getAlbumArt());
     }
+	
+	
+
+
+    @Test
+    public void testGetName() {
+        String sName = song.getName();
+        assertEquals(sName, song.getName());
+    }
+
+    @Test
+    public void testSetName() {
+        song.setName("SongName");
+        assertEquals("SongName", song.getName());
+    }
+
+    @Test
+    public void testGetAlbum() {
+        String sAlbum = song.getAlbum();
+        assertEquals(sAlbum, song.getAlbum());
+    }
+
+    @Test
+    public void testSetAlbum() {
+        song.setAlbum("Album");
+        assertEquals("Album", song.getAlbum());
+    }
 
 
 
