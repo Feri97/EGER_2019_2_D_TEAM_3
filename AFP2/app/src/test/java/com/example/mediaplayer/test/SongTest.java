@@ -39,6 +39,30 @@ public class SongTest extends Song {
             assertEquals(i,song.getIm());
         }
     }
+	
+	 @Test
+    public void testGetPath() {
+        String sPath = song.getPath();
+        assertEquals(sPath, song.getPath());
+    }
+
+    @Test
+    public void testSetPath() {
+        song.setPath("Path");
+        assertEquals("Path", song.getPath());
+    }
+
+    @Test
+    public void testGetAlbumArt() {
+        String sAlbumArt = song.getAlbumArt();
+        assertEquals(sAlbumArt, song.getPath());
+    }
+
+    @Test
+    public void testSetAlbumArt() {
+        song.setAlbumArt("AlbumArt");
+        assertEquals("AlbumArt", song.getAlbumArt());
+    }
 
 
 
