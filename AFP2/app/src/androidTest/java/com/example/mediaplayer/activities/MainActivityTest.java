@@ -21,7 +21,7 @@ import static junit.framework.TestCase.assertTrue;
 import static android.support.test.espresso.Espresso.onView;
 
 
-public class MainActivityTest {
+public class MainActivityTest extends MainActivity {
 
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule= new ActivityTestRule<MainActivity>(MainActivity.class);
@@ -44,6 +44,7 @@ public class MainActivityTest {
 
         onView(withId(R.id.mini_player_image)).perform(click());
     }
+
 
     @After
     public void tearDown() throws Exception {
