@@ -22,7 +22,7 @@ import static junit.framework.TestCase.assertTrue;
 import static android.support.test.espresso.Espresso.onView;
 
 
-public class MainActivityTest extends MainActivity {
+public class MainActivityTest {
 
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule= new ActivityTestRule<MainActivity>(MainActivity.class);
