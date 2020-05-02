@@ -1,10 +1,14 @@
 package com.example.mediaplayer.models;
 
 import android.content.Context;
+import android.database.Cursor;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import org.hamcrest.Matcher;
+import org.junit.Assert;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -38,7 +42,7 @@ public class DataReadingTest  {
     }
 
     @Test
-    public void setAlbums() {
+    public void testSetAlbums() {
         songs.add(song1);
         albums.put("first", songs);
         dR.setAlbums(albums);
@@ -48,6 +52,9 @@ public class DataReadingTest  {
 
 
     @Test
-    public void getAllAudioFromDevice() {
+    public void testGetAllAudioFromDevice() {
+
+        List<Song> test=dR.getAllAudioFromDevice();
+      Assert.assertTrue(test.isEmpty());
     }
 }
