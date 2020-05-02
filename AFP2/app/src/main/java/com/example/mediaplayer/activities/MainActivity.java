@@ -176,7 +176,7 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-    private void start(){
+    void start(){
         dataReading=new DataReading(this);
         songs=new ArrayList<>();
         songs.add(new Song());
