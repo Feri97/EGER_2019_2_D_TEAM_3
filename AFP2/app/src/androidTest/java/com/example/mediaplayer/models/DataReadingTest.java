@@ -1,6 +1,9 @@
 package com.example.mediaplayer.models;
 
 import android.content.Context;
+import android.database.Cursor;
+import android.net.Uri;
+import android.provider.MediaStore;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
@@ -50,6 +53,7 @@ public class DataReadingTest  {
 
     @Test
     public void testGetAllAudioFromDevice() {
+
         List<Song> test=dR.getAllAudioFromDevice();
       Assert.assertTrue(test.isEmpty());
     }

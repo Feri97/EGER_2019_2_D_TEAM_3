@@ -2,6 +2,7 @@ package com.example.mediaplayer.activities;
 
 import android.content.Intent;
 import android.support.test.rule.ActivityTestRule;
+import android.support.test.runner.AndroidJUnit4;
 import android.view.View;
 
 import com.example.mediaplayer.R;
@@ -10,6 +11,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
 import static android.support.test.espresso.action.ViewActions.click;
 import static android.support.test.espresso.assertion.ViewAssertions.matches;
@@ -20,8 +22,8 @@ import static junit.framework.TestCase.assertNull;
 import static junit.framework.TestCase.assertTrue;
 import static android.support.test.espresso.Espresso.onView;
 
-
-public class MainActivityTest extends MainActivity {
+@RunWith(AndroidJUnit4.class)
+public class MainActivityTest{
 
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule= new ActivityTestRule<MainActivity>(MainActivity.class);
