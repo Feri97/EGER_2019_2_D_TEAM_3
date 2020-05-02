@@ -23,13 +23,8 @@ import static junit.framework.TestCase.assertNull;
 import static junit.framework.TestCase.assertTrue;
 import static android.support.test.espresso.Espresso.onView;
 
-<<<<<<< HEAD
-@RunWith(AndroidJUnit4.class)
-public class MainActivityTest{
-=======
 
 public class MainActivityTest {
->>>>>>> eaba54dd4afc16f857cd3e28f2ca258f6e3600c6
 
     @Rule
     public ActivityTestRule<MainActivity> mActivityTestRule= new ActivityTestRule<MainActivity>(MainActivity.class);
@@ -69,6 +64,17 @@ public class MainActivityTest {
     }
 
 
+    @Test
+    public void testPause(){
+        mActivityTestRule.launchActivity(new Intent());
+        onView(withId(R.id.mini_player)).perform(click());
+        onView(withId(R.id.pause)).perform(click());
+    }
+    @Test
+    public void testPlay(){
+        mActivityTestRule.launchActivity(new Intent());
+        onView(withId(R.id.action_plus)).perform(click());
+    }
 
     @After
     public void tearDown() throws Exception {
