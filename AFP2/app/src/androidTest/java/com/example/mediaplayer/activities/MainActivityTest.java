@@ -49,6 +49,20 @@ public class MainActivityTest {
     }
 
 
+    @Test
+    public void test3(){
+        mActivityTestRule.launchActivity(new Intent());
+        onView(withId(R.id.action_search)).perform(click());
+    }
+
+    @Test
+    public void test4(){
+        mActivityTestRule.launchActivity(new Intent());
+        onView(withId(R.id.mini_player)).perform(click());
+    }
+
+
+
     @After
     public void tearDown() throws Exception {
 
