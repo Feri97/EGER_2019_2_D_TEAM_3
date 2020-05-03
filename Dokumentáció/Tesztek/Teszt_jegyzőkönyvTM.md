@@ -9,4 +9,5 @@ Az alkalmazást android studión keresztül telepítettem. Amint lefordult és f
 
 2.Teszt: UI
 ------------
+UI teszt alatt a kezelő felülettet ellenőriztem. Ellenőriztem, hogy megfelelően reagálnak az érintésekre illetve a gesztusokra. Oldalra huzásoknál sikeresen váltakoztak a fragmentek, listáknál sikeresen lehetett lefelé görgetni. Megfelelő koppintásokra azok a funkciók hajtódtak végre amiknek kellett.
     
