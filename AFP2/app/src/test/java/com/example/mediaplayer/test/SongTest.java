@@ -102,6 +102,18 @@ public class SongTest extends Song {
         song.setArtist("Album");
         assertEquals("Album", song.getArtist());
     }
+	
+    @Test
+    public void testClass(){
+        String name="Smack my bitch up";
+        String album="The Fat of the Land";
+        String artist="The Prodigy";
+        String genre="Breakbeat";
+        int index=2 ;
+        Song zene= new Song(name,album,artist,genre,index);
+        assertTrue(zene instanceof Song);
+    }
+
 
 
 
