@@ -6,6 +6,11 @@ import com.example.mediaplayer.models.Song;
 
 import org.junit.Test;
 
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
 import static org.junit.Assert.*;
 
 public class SongTest extends Song {
@@ -114,7 +119,11 @@ public class SongTest extends Song {
         assertTrue(zene instanceof Song);
     }
 
-
-
+    @Test(expected = FileNotFoundException.class)
+    public void testReadFile() throws IOException {
+        FileReader reader = new FileReader("test.txt");
+        reader.read();
+        reader.close();
+    }
 
 }
