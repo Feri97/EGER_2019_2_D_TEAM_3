@@ -10,6 +10,8 @@ import org.junit.Test;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.List;
 
 import static org.junit.Assert.*;
 
@@ -124,6 +126,13 @@ public class SongTest extends Song {
         FileReader reader = new FileReader("test.txt");
         reader.read();
         reader.close();
+    }
+
+    @Test
+    public void testAssetTest() {
+        List<String> zenek = Arrays.asList("Seeyouagain", "GangnamStyle", "Despacito");
+
+        assertTrue(zenek.contains("Seeyouagain"));
     }
 
 }
