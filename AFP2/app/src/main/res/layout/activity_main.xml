@@ -66,7 +66,8 @@
             android:textAlignment="center"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
             android:textColor="@color/colorAccent"
-            android:textSize="20sp" />
+            android:textSize="20sp"
+            tools:ignore="RtlCompat" />
 
         <ImageView
             android:id="@+id/mini_player_play_pause_button"

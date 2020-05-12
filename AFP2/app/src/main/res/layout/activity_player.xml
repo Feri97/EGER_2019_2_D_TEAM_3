@@ -41,7 +41,7 @@
             android:textColor="#ffff"
             android:id="@+id/song_name"
             android:layout_weight="4"
-            />
+            android:gravity="center_horizontal" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -53,7 +53,7 @@
             android:id="@+id/artist_name"
             android:layout_marginTop="10dp"
             android:layout_weight="6"
-            />
+            android:gravity="center_horizontal" />
         </LinearLayout>
 
     </LinearLayout>
